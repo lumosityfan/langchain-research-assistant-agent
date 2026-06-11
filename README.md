@@ -47,31 +47,40 @@ Automated Evaluation Framework
 - Resets tool_usage metrics before each eval run for clean scorng
 - Outputs summary report with per-case results and overall statistics
 
-Prerequisites
+---
 
+## 🚀 Getting Started
+
+### Prerequisites
+
+```bash
 pip install langchain langchain-community langchain-openai langchain-huggingface
 pip install langgraph faiss-cpu sentence-transformers duckduckgo-search
+```
 
-Environment Setup
+### Environment Setup
 
+```bash
 export OPENAI_API_KEY="your-api-key-here"
+```
 
-or store the OPENAI_API_KEY in a separate .env file.
+### Run the Agent (CLI)
 
-Run the Agent (CLI)
-
+```bash
 python memory_agent.py
+```
 
-On a first run, a faiss_index/ directory is created. Subsequent runs load from it automatically.
+On first run, a `faiss_index/` directory is created. Subsequent runs load from it automatically.
 
-Run Evaluations
+### Run Evaluations
 
+```bash
 python agent_evaluation.py
+```
 
-Runs full test suite and prints a per-case report with tool accuracy and overall scores.
+Runs the full test suite and prints a per-case report with tool accuracy and overall scores.
 
-User Query -> AgentOrchestrator -> memory_agent.py -> AgentOrchestrator
-
+---
 
 ## 🔄 How It All Fits Together
 
