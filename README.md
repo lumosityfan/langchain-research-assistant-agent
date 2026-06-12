@@ -80,6 +80,16 @@ python agent_evaluation.py
 
 Runs the full test suite and prints a per-case report with tool accuracy and overall scores.
 
+### Running It on Your Web Browser
+
+There is now an option to run this program on your web browser through Streamlit! Simply run this command:
+
+```bash
+streamlit run app.py
+```
+
+and click on the localhost link it gives you. This will allow you to play around with the chatbot as you enter in commands and on the side the metrics will show up as well.
+
 ---
 
 ## 🔄 How It All Fits Together
