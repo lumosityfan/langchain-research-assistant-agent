@@ -2,8 +2,6 @@ LangChain Research Assistant Agent
 
 I built this LangChain Research Assistant Agent to practice making AI Agents with Python and the various features it can offer. It provides memory through short-term, long-term with FAISS, and episodic, orchestration with retries and guardrails, and an automated evaluation framework.
 
-Disclaimer that I did use AI to help compile everything I did for this project but I used my own mind for the final writing down of the details here in this README.md file. The second half was written with AI but mainly for the formatting.
-
 Files
 
 - agent_setup.py
@@ -28,7 +26,7 @@ Tools
 - Calculator for math and unit conversions
 - Text summarization for long-form content
 
-Thread-Bases Session Management
+Thread-Based Session Management
 
 - Allows for easier managing of memory across sessions
 
@@ -179,7 +177,7 @@ A few real gotchas encountered building this:
 - [x] Long-term FAISS memory with disk persistence
 - [x] Orchestration layer with retries, guardrails, and metrics
 - [x] Automated evaluation framework
-- [ ] Streamlit chat frontend
+- [x] Streamlit chat frontend
 - [ ] Swap GPT for Claude (`ChatAnthropic` — one line in `agent_setup.py`)
 - [ ] Multi-agent workflows with LangGraph
 - [ ] Episodic memory with timestamps and decay
